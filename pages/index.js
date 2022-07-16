@@ -4,7 +4,6 @@ import styles from "../styles/Home.module.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import RepositoryList from "../components/RepositoryList";
-import { SpinnerCircularFixed } from "spinners-react";
 import useGitfetch from "../utils/useGitFetch";
 import InfiniteScroll from "react-infinite-scroll-component";
 
@@ -16,7 +15,7 @@ export default function Home() {
   const nextPage = () => {
     setPage((prevPage) => prevPage + 1);
   };
-  
+
 
   if (error) {
     return <div>Error fetching data</div>;

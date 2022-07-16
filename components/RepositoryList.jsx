@@ -1,12 +1,10 @@
 import React,{useEffect,useState} from 'react'
-import { SpinnerCircularFixed } from "spinners-react";
-import Image from 'next/image';
+
 import moment from "moment";
 
 const RepositoryList = (repository) => {
     
 
-    const [loader,setLoader] = useState(false);
     const [RepositoryDetails,setRepositoryDetails] = useState([repository]);
    
 
