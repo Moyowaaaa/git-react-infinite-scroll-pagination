@@ -65,5 +65,44 @@ a {
 
 }
 
+.avatar{
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width:480px) {
+  body{
+    overflow-x: hidden;
+  }
+  .repo-row {
+    width:90%;
+    margin:auto;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+
+  .repo-counts{
+    flex-direction: column;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  
+
+  }
+  .header{
+    font-size: 24px;
+  }
+
+  .avatar {
+    width: 250px;
+    height: 250px;
+  }
+  .repo-counts .stars,  .repo-counts .issues{
+    border:none;
+    border-bottom: 2px solid white;
+  }  
+
+}
+
 
 

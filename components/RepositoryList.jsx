@@ -12,7 +12,7 @@ const RepositoryList = (repository) => {
     <>
     <div className='repo-row'>
         <div className='repo-avatar'>
-        <img src={RepositoryDetails[0].repository.owner.avatar_url} alt='avatar' width={100} height={100}/>
+        <img src={RepositoryDetails[0].repository.owner.avatar_url} alt='avatar' className='avatar'/>
         </div>
 
         <div>
